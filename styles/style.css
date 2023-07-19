@@ -95,8 +95,11 @@ button {
     border: none;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
+    cursor: pointer;
 }
-
+.manu-section ul button:hover{
+    background: rgba(11, 2, 35, 0.24);
+}
 .manu-section ul button i {
     font-size: 22px;
 }
@@ -186,31 +189,6 @@ button {
     width: 100%;
 }
 
-/* banner section end */
-
-/* main section styles start*/
-/* banner section start */
-/* .main-banner-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.banner-contant {
-    padding: 50px;
-    padding-right: 450px;
-    background-image: url(../images/banner.png);
-    background-repeat: no-repeat;
-}
-
-
-
- */
-
-/* banner section end */
-
 
 /* we are gammer seciton start */
 .we-are-gammer-seciton {
@@ -267,15 +245,9 @@ button {
     color: #0B0223;
 }
 .funny-video-section h2 {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Work Sans;
+    color: #0B0223;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 
@@ -374,7 +346,7 @@ button {
 .play-title {
     font-size: 48px;
     font-weight: 700;
-    color: #F948B2;
+    color: #0B0223;
 }
 
 /* play-game-section end */
@@ -509,7 +481,6 @@ footer {
     .play-title {
         font-size: 40px;
     }
-
     .banner-contant {
         padding: 20px 40px;
         text-align: center;
@@ -538,11 +509,11 @@ footer {
     }
 
     .banner-contant h1 {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .banner-contant h3 {
-        font-size: 38px;
+        font-size: 35px;
         margin-top: 20px;
     }
 
@@ -564,7 +535,7 @@ footer {
     }
 
     .gammer-section-contant p {
-        padding: 0px 20px;
+        padding: 0px 10px;
     }
 
     .cards p {
@@ -576,6 +547,9 @@ footer {
     .banner-btns button {
         padding: 11px 20px;
         font-size: 15px;
+    }
+    .banner-btns button{
+        margin: 0 auto;
     }
 
     .play-instantly-contant {
@@ -592,7 +566,7 @@ footer {
     }
 
     .game-instantly-small-images {
-        bottom: -20px;
+        bottom: -30px;
         left: -40px;
     }
 
@@ -638,13 +612,13 @@ footer {
 
 /* responsive for middle device */
 @media screen and (min-width:576px) and (max-width:992px) {
-
+    .container {
+        padding: 0 70px;
+    }
     nav,
-    .cards,
     .Play-instantly-section {
         flex-direction: column;
     }
-
     .main-banner-section {
         flex-direction: column-reverse;
     }
@@ -652,7 +626,9 @@ footer {
     .manu-section {
         margin-top: 20px;
     }
-
+    .banner-images {
+        padding-right: 0px;
+    }
     .gammer-section {
         flex-direction: column;
         margin: 20px 0px;
@@ -673,10 +649,16 @@ footer {
 
     .gammer-section-contant,
     .cards p,
-    .play-instantly-contant {
+    .play-instantly-contant
+    {
         text-align: center;
     }
-
+    .play-instantly-contant{
+        width: 100%;
+    }
+    .play-instantly-contant p{
+        margin: 0px 10px;
+    }
     .game-instantly-small-images {
         bottom: -60px;
         right: 250px;
