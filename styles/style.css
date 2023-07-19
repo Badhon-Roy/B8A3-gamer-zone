@@ -30,6 +30,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
 }
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -110,19 +111,21 @@ button {
 
 /* main section styles start*/
 /* banner section start */
-.main-banner-section{
+.main-banner-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100vh;
 }
-.banner-contant{
+
+.banner-contant {
     padding: 50px;
     padding-right: 450px;
     background-image: url(../images/banner.png);
     background-repeat: no-repeat;
 }
+
 .banner-contant h3 {
     color: #0B0223;
     font-size: 48px;
@@ -166,7 +169,8 @@ button {
     background: #4EC5F7;
     border: none;
 }
-.banner-images{
+
+.banner-images {
     width: 50%;
 }
 
@@ -186,15 +190,19 @@ button {
     align-items: center;
     gap: 20px;
 }
-.gammer-section-img{
+
+.gammer-section-img {
     width: 50%;
 }
+
 .gammer-section-img img {
     width: 100%;
 }
-.gammer-section-contant{
+
+.gammer-section-contant {
     width: 50%;
 }
+
 .gammer-section-contant {
     text-align: end;
 }
@@ -217,77 +225,109 @@ button {
 /* we are gammer seciton end */
 
 /* funny-video-section start */
-.funny-video-section{
+.funny-video-section {
     text-align: center;
 }
-.funny-video-section h2{
+
+.funny-video-section h2 {
     margin-top: 50px;
 }
-.funny-video-section p{
+
+.funny-video-section p {
     margin: 20px 0px;
 }
-.cards{
+
+.cards {
     display: flex;
     gap: 20px;
 }
-.cards p{
+
+.cards p {
     text-align: start;
 }
+
 /* funny-video-section end */
 
 /* play-game-section start */
-.Play-instantly-section{
+.Play-instantly-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 250px;
     margin-top: 100px;
-    margin-bottom: 200px ;
+    margin-bottom: 200px;
 }
-.play-instantly-contant{
+
+.play-instantly-contant {
     text-align: end;
     width: 50%;
 }
-.play-instantly-images .boro{
+
+.play-instantly-images .game-instantly-big-images {
     width: 100%;
 }
-.play-instantly-images .game-instantly-small-images{
+
+.play-instantly-images .game-instantly-small-images {
     width: 50%;
 }
-.play-instantly-images{
+
+.play-instantly-images {
     position: relative;
     width: 50%;
 }
-.game-instantly-small-images{
+
+.game-instantly-small-images {
     position: absolute;
     bottom: -100px;
     right: 450px;
 }
 
+.play-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #F948B2;
+}
+
 /* play-game-section end */
+/* another-games-section start */
+.another-games-section {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
 
-
-/* play-game-section start */
-.play-game-section{
+.games-btn {
+    border: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 250px;
-    margin-top: 100px;
-    margin-bottom: 200px ;
+    padding: 10px;
+    border-radius: 50px;
+    background: #ffffff;
 }
-.play-game-images{
-    position: relative;
+.games-btn:hover{
+    border:2px solid red ;
+    color: #F948B2;
 }
-.game-small-images{
-    position: absolute;
-    bottom: -100px;
-    left: 500px;
+.games-btn:hover a{
+    color: #F948B2;
 }
-.play-game-contant{
-    text-align: start;
+
+.games-btn img {
+    width: 60px;
+    height: 60px;
 }
-/* play-game-section end */
+
+.games-btn a {
+    text-decoration: none;
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+/* another-games-section end */
 
 
 
@@ -299,9 +339,7 @@ button {
     .manu-section>ul,
     .gammer-section,
     .cards,
-    .Play-instantly-section,
-    .play-game-section
-    {
+    .Play-instantly-section {
         flex-direction: column;
     }
 
@@ -313,11 +351,12 @@ button {
     .banner-section {
         flex-direction: column-reverse;
     }
-    .banner-contant , 
-    .banner-images
-    {
+
+    .banner-contant,
+    .banner-images {
         width: 100%;
     }
+
     .banner-contant h1 {
         font-size: 80px;
     }
@@ -330,57 +369,106 @@ button {
     .description {
         font-size: 16px;
     }
-    .we-are-gammer-seciton{
+
+    .we-are-gammer-seciton {
         margin: 20px 0px;
     }
-    .gammer-section-img{
+
+    .gammer-section-img {
         width: 100%;
     }
-    .gammer-section-contant{
+
+    .gammer-section-contant {
         text-align: center;
         width: 100%;
     }
-    .gammer-section-contant p{
+
+    .gammer-section-contant p {
         padding: 0px 20px;
     }
-    .cards p{
+
+    .cards p {
         text-align: center;
         margin: 0px 20px;
     }
-    .gammer-section-contant button{
+
+    .gammer-section-contant button {
         padding: 11px 20px;
         font-size: 15px;
     }
-    .Play-instantly-section{
+
+    .play-instantly-contant {
+        text-align: center;
+        width: 100%;
+    }
+
+    .play-instantly-images {
+        width: 70%;
+    }
+
+    .Play-instantly-section {
         gap: 0px;
     }
-    .game-instantly-small-images{
+
+    .game-instantly-small-images {
         bottom: -20px;
         right: 200px;
     }
-    
+
+    .play-instantly-contant p {
+        margin: 15px;
+
+    }
+    .games-btn a {
+        font-size: 15px;
+        font-weight: 600;
+        padding-left: 5px;
+    }
+    .games-btn{
+        border: 2px solid yellow;
+    }
+    .games-btn img {
+        width: 30px;
+        height: 30px;
+    }
+    .another-games-section{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
 }
 
 /* responsive for middle device */
 @media screen and (min-width:576px) and (max-width:992px) {
+
     nav,
     .cards,
-    .Play-instantly-section,
-    .play-game-section
-    {
+    .Play-instantly-section {
         flex-direction: column;
     }
-    .manu-section{
+
+    .manu-section {
         margin-top: 20px;
     }
-    .gammer-section{
+
+    .gammer-section {
         flex-direction: column;
         margin: 20px 0px;
     }
-    .gammer-section-contant ,
-    .cards p
-    {
+
+    .gammer-section-contant,
+    .cards p,
+    .play-instantly-contant {
         text-align: center;
+    }
+
+    .game-instantly-small-images {
+        bottom: -60px;
+        right: 250px;
+    }
+
+    .Play-instantly-section {
+        gap: 20px;
     }
 }
 
