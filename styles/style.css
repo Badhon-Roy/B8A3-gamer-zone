@@ -7,6 +7,8 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
+    max-width: 1900px;
+    margin: 0 auto;
 }
 
 .section-title {
@@ -26,14 +28,13 @@ body {
 
 .btn-text {
     color: #FFF;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .container {
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 0 140px;
 }
 
 /* Global styles end */
@@ -42,6 +43,7 @@ body {
 /* header section styls start */
 header {
     background-color: #fff;
+    padding: 30px 0;
 }
 
 nav {
@@ -110,27 +112,19 @@ button {
 /* header section styls end */
 /* banner section start */
 .main-banner-section{
-    display: none;
-}
-/* banner section end */
-
-/* main section styles start*/
-/* banner section start */
-/* .main-banner-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    gap: 50px;
 }
-
-.banner-contant {
-    padding: 50px;
-    padding-right: 450px;
+.banner-contant{
+    width: 50%;
+    padding: 100px 140px;
     background-image: url(../images/banner.png);
+    background-size: cover;
     background-repeat: no-repeat;
 }
-
 .banner-contant h3 {
     color: #0B0223;
     font-size: 48px;
@@ -162,7 +156,10 @@ button {
     align-items: center;
     gap: 10px;
 }
+.banner-btns{
+    display: flex;
 
+}
 .sign-in-btn {
     border-radius: 48px;
     background: #FF42A5;
@@ -174,10 +171,35 @@ button {
     background: #4EC5F7;
     border: none;
 }
-
-.banner-images {
+.banner-images{
     width: 50%;
-} */
+    padding-right: 140px;
+}
+.banner-images img {
+    width: 100%;
+}
+/* banner section end */
+
+/* main section styles start*/
+/* banner section start */
+/* .main-banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-contant {
+    padding: 50px;
+    padding-right: 450px;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+}
+
+
+
+ */
 
 /* banner section end */
 
@@ -298,12 +320,10 @@ button {
 .another-games-section {
     text-align: center;
     width: 100%;
-    padding: 0 30px;
     margin-bottom: 50px;
     display: grid;
     align-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2;
+    grid-template-columns: repeat(5 , 1fr);
     justify-content: center;
     gap: 20px;
 }
@@ -415,7 +435,9 @@ footer {
     .manu-section>ul,
     .gammer-section,
     .cards,
-    .Play-instantly-section {
+    .Play-instantly-section ,
+    .main-banner-section
+    {
         flex-direction: column;
     }
     .section-title ,
