@@ -255,6 +255,10 @@ button {
 .funny-video-section {
     text-align: center;
 }
+.watch{
+    position: absolute;
+    top: 0;
+}
 
 .funny-video-section h2 {
     margin-top: 50px;
@@ -268,9 +272,14 @@ button {
     display: flex;
     gap: 20px;
 }
-
 .cards p {
     text-align: start;
+}
+.card img{
+    width: 100%;
+}
+.card{
+    width: 100%;
 }
 
 /* funny-video-section end */
@@ -435,15 +444,21 @@ footer {
     .manu-section>ul,
     .gammer-section,
     .cards,
-    .Play-instantly-section ,
-    .main-banner-section
+    .Play-instantly-section
     {
         flex-direction: column;
+    }
+    .main-banner-section{
+        flex-direction: column-reverse;
     }
     .section-title ,
     .play-title
     {
         font-size: 40px;
+    }
+    .banner-contant{
+        padding: 20px 40px;
+        text-align: center;
     }
     .manu-section ul li,
     button {
@@ -453,12 +468,16 @@ footer {
     .banner-section {
         flex-direction: column-reverse;
     }
-
+    .container {
+        padding: 0 10px;
+    }
     .banner-contant,
     .banner-images {
         width: 100%;
     }
-
+.banner-images{
+    padding-right: 0px;
+}
     .banner-contant h1 {
         font-size: 80px;
     }
