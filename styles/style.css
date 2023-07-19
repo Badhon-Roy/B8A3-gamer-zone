@@ -417,6 +417,9 @@ footer {
 .footer-manu {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .footer-manu a {
@@ -445,7 +448,9 @@ footer {
 .foter-description {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 20px;
+    max-width: 1000px;
+    text-align: center;
+    margin: 15px auto;
     color: white;
 }
 
@@ -671,6 +676,15 @@ footer {
     .another-games-section {
         grid-template-columns: repeat(4, 1fr);
         gap: 5px;
+    }
+    .games-btn a {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+
+    .games-btn img {
+        width: 40px;
+        height: 40px;
     }
 }
 
