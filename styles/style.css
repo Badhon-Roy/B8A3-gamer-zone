@@ -257,7 +257,22 @@ button {
 }
 .watch{
     position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 15px;
+    color: white;
     top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.watch i{
+    margin-right: 10px;
+    
 }
 
 .funny-video-section h2 {
@@ -280,6 +295,13 @@ button {
 }
 .card{
     width: 100%;
+    
+}
+.card-img{
+    position: relative;
+}
+.card-img:hover .watch{
+    display: flex;
 }
 
 /* funny-video-section end */
