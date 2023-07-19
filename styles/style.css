@@ -363,7 +363,7 @@ button {
     border: none;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 4px;
     border-radius: 50px;
     background: #ffffff;
 }
@@ -569,9 +569,7 @@ footer {
         padding-left: 5px;
     }
 
-    .games-btn {
-        border: 2px solid yellow;
-    }
+    
 
     .games-btn img {
         width: 30px;
@@ -580,7 +578,10 @@ footer {
 
     .another-games-section {
         grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
+        gap: 2px;
+    }
+    footer {
+        padding: 10px;
     }
     .footer-manu {
         grid-template-columns: repeat(3, 1fr);
@@ -600,7 +601,9 @@ footer {
     .Play-instantly-section {
         flex-direction: column;
     }
-
+    .main-banner-section{
+        flex-direction: column-reverse;
+    }
     .manu-section {
         margin-top: 20px;
     }
@@ -608,6 +611,18 @@ footer {
     .gammer-section {
         flex-direction: column;
         margin: 20px 0px;
+    }
+
+    .gammer-section-img {
+        width: 100%;
+    }
+    .gammer-section-contant {
+        width: 100%;
+    }
+
+    .banner-contant,
+    .banner-images {
+        width: 100%;
     }
 
     .gammer-section-contant,
