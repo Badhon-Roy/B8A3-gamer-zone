@@ -161,6 +161,8 @@ button {
     padding: 21px 40px;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+    
 }
 
 .banner-btns {
@@ -172,12 +174,22 @@ button {
     border-radius: 48px;
     background: #FF42A5;
     border: none;
+
+}
+.sign-in-btn:hover {
+    background: #bb156b;
+    transition: 1s;
+
 }
 
 .go-rogue-btn {
     border-radius: 48px;
     background: #4EC5F7;
     border: none;
+}
+.go-rogue-btn:hover {
+    background: #0e5f81;
+    transition: 1s;
 }
 
 .banner-images {
@@ -227,6 +239,10 @@ button {
     border-radius: 48px;
     background: #FF42A5;
     border: none;
+}
+.gammer-section-contant button:hover{
+    background: #bb156b;
+    transition: 1s;
 }
 
 .our-purpose-section {
@@ -305,6 +321,7 @@ button {
 
 .card-img:hover .watch {
     display: flex;
+    border: 2px solid #F948B2;
 }
 
 /* funny-video-section end */
@@ -352,13 +369,12 @@ button {
 /* play-game-section end */
 /* another-games-section start */
 .another-games-section {
-    text-align: center;
-    width: 100%;
     margin-bottom: 50px;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     align-content: center;
-    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
+    padding: 0px 250px;
     gap: 20px;
 }
 
@@ -596,6 +612,7 @@ footer {
     }
 
     .another-games-section {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2px;
     }
@@ -674,7 +691,8 @@ footer {
     }
 
     .another-games-section {
-        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 5px;
     }
     .games-btn a {
@@ -683,8 +701,8 @@ footer {
     }
 
     .games-btn img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
 }
 
