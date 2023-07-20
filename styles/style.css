@@ -72,11 +72,14 @@ nav {
     color: #ff42a5;
 }
 
-.manu-section>ul {
+.manu-section {
     display: flex;
     align-items: center;
 }
-
+.manu-section > ul{
+    display: flex;
+    align-items: center;
+}
 .manu-section ul li,
 button {
     list-style: none;
@@ -92,17 +95,17 @@ button {
     font-weight: 500;
 }
 
-.manu-section ul button {
+.manu-section button {
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     cursor: pointer;
 }
-.manu-section ul button:hover{
+.manu-section button:hover{
     background: rgba(11, 2, 35, 0.24);
 }
-.manu-section ul button i {
+.manu-section button i {
     font-size: 22px;
 }
 
@@ -494,6 +497,7 @@ footer {
 @media screen and (max-width:576px) {
 
     nav,
+    .manu-section,
     .manu-section>ul,
     .gammer-section,
     .cards,
