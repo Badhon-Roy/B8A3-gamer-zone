@@ -446,7 +446,9 @@ footer {
     font-weight: 600;
     margin: 20px;
 }
-
+.twitter-icon{
+    color: skyblue;
+}
 .footer-icons {
     display: flex;
     justify-content: space-evenly;
@@ -456,7 +458,6 @@ footer {
 
 .footer-icons i {
     font-size: 40px;
-    color: white;
     margin: 20px;
     cursor: pointer;
 }
@@ -546,7 +547,7 @@ footer {
         margin: 20px 0px;
     }
 
-    .gammer-section-img {
+    .gammer-section-img{
         width: 100%;
     }
 
