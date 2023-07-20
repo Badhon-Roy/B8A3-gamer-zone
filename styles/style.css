@@ -511,7 +511,7 @@ footer {
     }
     .banner-contant {
         padding: 20px 40px;
-        text-align: center;
+        text-align: start;
     }
 
     .manu-section ul li,
